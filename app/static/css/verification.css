@@ -1,0 +1,289 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+
+    background: #DBF5F0;
+    
+    /* background-color: black; */
+    height: 42rem;
+}
+
+.banner1{
+    padding: 0vw 8vw 0vw 8vw;
+}
+
+.image{
+    width: 52.5rem;
+    height: 35rem;
+
+    background: linear-gradient(0deg, rgba(12, 97, 112, 0.6), rgba(12, 97, 112, 0.6)), url(../img/kewenangan-klinis-dokter-spesialis-kulit-dan-kelamin.jpg);
+    background-size: cover;
+    border-radius: 35px 0px 0px 35px;
+}
+
+.mask{
+    width: 46rem;
+    height: 38rem;
+
+    background: #0C6170;
+    border-radius: 35px 0px 0px 35px;
+}
+
+.btn{
+    height: 4rem;
+    width: 21rem;
+    background: #0C6170;
+    border-radius: 1.25rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+    color: #FFFFFF;
+}
+
+.btn:hover, .btn:active, .btn:focus{
+    border: 3px solid #0C6170;
+    background: transparent;
+    color: #0C6170;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+
+    color: #0C6170;
+}
+
+p{
+    font-weight: 600;
+    font-size: 1.25rem;
+
+    color: #0C6170;
+}
+
+.result{
+    background: #A4E5E0;
+    height: 112rem;
+}
+
+.table thead{
+    background: #0C6170;
+    color:#FFFFFF;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.table tbody{
+    background: #DBF5F0;
+    color: #000000;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.table tbody tr td img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.table tbody tr td a{
+    color: #000000;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.btn1{
+    height: 3rem;
+    width: 3rem;
+    background: #A4E5E0;
+    border: none;
+    border-radius: 20px;
+}
+
+/* .pagination li a{
+    height: 3rem;
+    width: 3rem;
+    background: #0C6170;
+    border-radius: 0.5rem;
+    color:#FFFFFF;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    margin: 0.25rem;
+} */
+
+.r1{
+    border-top-left-radius: 20px;
+}
+
+.r2{
+    border-top-right-radius: 20px;
+}
+
+/* .r3{
+    border-bottom-left-radius: 20px;
+}
+
+.r4{
+    border-bottom-right-radius: 20px;
+} */
+
+.modalimage{
+    height: 20rem;
+    width: 20rem;
+}
+
+.modal-header{
+    background: #37BEB0;;
+}
+
+.modal-body, .modal-footer{
+    background: #DBF5F0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    color: #000000;
+}
+
+h3{
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.btn2{
+    width: 12rem;
+    height: 4rem;
+    background: #35CD3B;
+    border-radius: 1.25rem;
+
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+    color: #FFFFFF;
+}
+
+.btn3{
+    width: 12rem;
+    height: 4rem;
+    background: #FF1010;
+    border-radius: 1.25rem;
+    
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+    color: #FFFFFF;
+}
+
+.btn4{
+    width: 8rem;
+    height: 3rem;
+    background: #0C6170;
+    border-radius: 1.25rem;
+    
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+    color: #FFFFFF;
+}
+
+.btn6{
+    width: 8rem;
+    height: 3rem;
+    background: #37BEB0;
+    border-radius: 1.25rem;
+    
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+    color: #FFFFFF;
+}
+
+.doctorimage{
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn5{
+    background:none;
+    border: none;
+    color: #ffffff;
+    
+    font-size: 1rem;
+}
+
+#choose_res {
+    display: none;
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (max-width:840px) {
+    .banner1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .banner2{
+        display: none;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn{
+        margin-top: 1vh;
+    }
+
+    .btn2, .btn3{
+        height: 4rem;
+        width: 12rem;
+    }
+}
+
+.pagination-page-info {
+    /* padding: .6em; */
+    padding-left: 0;
+    /* width: 40em; */
+    /* margin: .5em; */
+    margin-left: 0;
+    font-size: 30 px;
+}
+
+.pagination-page-info b {
+    color: black;
+    background: none;
+    padding-left: 2px;
+    padding: .1em .25em;
+    font-size: 150%;
+}
+
+span.sr-only {
+    background-color: white;
+    color: #0C6170;
+}
+
+li .page-link {
+    background-color: #0C6170;
+    outline: none;
+    color: white;
+    font-size: larger;
+}
+
+li.page-item.active a.page-link, li .page-link:hover {
+    background-color: white;
+    color: #0C6170;
+    border:#FFFFFF;
+}

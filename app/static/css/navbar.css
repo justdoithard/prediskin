@@ -1,0 +1,80 @@
+h1, p, .btn, a, div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav.navbar ul li a, a, nav.navbar ul li div {
+    color: #0C6170;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav.navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0C6170;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+nav.navbar ul li div::after {
+    content: '';
+    width: 100%;
+    height: 3.5px;
+    background: #0C6170;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* responsive */
+nav.navbar .fa-solid {
+    display: none;
+}
+
+/* @media only screen and (max-width: 1190px) {
+    nav.navbar .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav.navbar ul {
+        background: #DBF5F0;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav.navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav.navbar ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+} */

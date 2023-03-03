@@ -1,0 +1,183 @@
+.containersss {
+    height: 54.487vw;
+    width: 97.372vw;
+    background-color: #A4E5E0;
+    padding: 0px 6.410vw 3.205vw 6.410vw;
+}
+
+.containerss {
+    height: 44.231vw;
+    width: 84.551vw;
+    background-color: #DBF5F0;
+    padding: 3.205vw 6.410vw;
+    border-radius: 1.923vw;
+}
+
+.containers {
+    height: 22.436vw;
+    width: 100%;
+}
+
+.containers .wrapper {
+    position: relative;
+    height: 33.654vw;
+    width: 100%;
+    border-radius: 0.641vw;
+    background: #fff;
+    border: 0.128vw dashed #0C6170;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper.active {
+    border: none;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .icon {
+    font-size: 6.410vw;
+    color: #0C6170;
+}
+
+.wrapper .text {
+    font-size: 1.282vw;
+    font-weight: 500;
+    color: #0C6170;
+}
+
+.wrapper #cancel-btn {
+    position: absolute;
+    right: 0.962vw;
+    top: 0.962vw;
+    font-size: 1.282vw;
+    cursor: pointer;
+    color: #f70702;
+    display: none;
+}
+
+.wrapper.active:hover #cancel-btn {
+    display: block;
+}
+
+.wrapper.active #cancel-btn:hover {
+    color: #b00501;
+}
+
+.wrapper .file-name {
+    position: absolute;
+    bottom: 0vw;
+    width: 100%;
+    color: #fff;
+    padding: 0.513vw 0;
+    font-size: 1.154vw;
+    display: none;
+    background: linear-gradient(135deg, #DBF5F0 0%, #0C6170 100%);
+}
+
+.wrapper.active:hover .file-name {
+    display: block;
+}
+
+.containers #custom-btn {
+    margin-top: 1.923vw;
+    width: 100%;
+    height: 3.205vw;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 0.962vw;
+    color: #fff;
+    font-size: 1.154vw;
+    font-weight: 500;
+    letter-spacing: 0.064vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* background: #0C6170; */
+    background: linear-gradient(135deg, #DBF5F0 0%, #0C6170 100%);
+}
+
+h1, p, .btn, a, div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a, a, nav ul li p {
+    color: #0C6170;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0C6170;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li p::after {
+    content: '';
+    width: 100%;
+    height: 3.5px;
+    background: #0C6170;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* responsive */
+
+
+nav .fa-solid {
+    display: none;
+}
+
+.buttons {
+    color: #DBF5F0;
+    background-color: #0C6170;
+    border: none;
+    border-radius: 0.9874917709019092vw;
+    padding: 1.053324555628703vw 3.1599736668861094vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 3.2916392363396976vw;
+}
+
+.buttons:hover {
+    box-shadow: 0 0.7899934167215273vw 1.053324555628703vw 0 rgba(0,0,0,0.24),0 1.119157340355497vw 3.2916392363396976vw 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}

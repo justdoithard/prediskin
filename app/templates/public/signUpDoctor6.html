@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="{{ url_for( 'static', filename='css/signUpDoctor6.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='img/LogoTab.png')}}">
+    <script src="https://kit.fontawesome.com/df71ce2cde.js" crossorigin="anonymous"></script>
+    <title>Mendaftar - PreDiSkin.</title>
+</head> 
+<body>
+    <div class="body-full">
+        <div class="container-fluid w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="row rounded-5 w-100">
+                <div class="col-xxl-6 col-xl-6 col-lg-5">
+                    <div class="limit h-100 w-100">
+                        <img src="{{ url_for( 'static', filename='img/SIGN-UP-06-DOKTER.jpg') }}" alt="" class="w-100 h-100 rounded-5 object-fit-cover">
+                        <div class="rounded-5 overflow-box"></div>
+                    </div>
+                </div>
+
+                <div id="isi" class="col-xxl-6 col-xl-6 col-lg-7 d-flex flex-column justify-content-center">
+                    <div class="isi-text">
+                        <p><small>LANGKAH 06 / 06</small></p>
+                        <p class="fs-2 mb-3 pb-1">Ketentuan & Kebijakan</p>
+                        <span><small id="pesan">Mohon centang persetujuan ketentuan & kebijakan terlebih dahulu</small></span>
+                    </div>
+                
+                    <div id="isi-form-text" class="mb-2 pb-1 rounded-5">
+                        <p><small>Saya menyatakan bahwa Saya telah membaca, memahami, menerima
+                                  dan menyetujui <a href=""> Ketentuan & Kebijakan </a> aplikasi tanpa 
+                                  terkecuali. Persetujuan ini memiliki kekuatan hukum yang sama
+                                  seperti Saya menandatangani Ketentuan & Kebijakan dari aplikasi 
+                                  secara langsung </small></p>
+                    </div>
+        
+                    <form action="{{url_for('signUpDoctor6')}}" method="POST">
+                        <input type="hidden" id="role" name="role" value="{{role}}">
+                        <input type="hidden" id="fullname" name="fullname" value="{{name}}">
+                        <input type="hidden" id="gender" name="gender" value="{{gender}}">
+                        <input type="hidden" id="date" name="date" value="{{dob}}">
+                        <input type="hidden" id="email" name="email" value="{{email}}">
+                        <input type="hidden" id="phone" name="phone" value="{{phoneNum}}">
+                        <input type="hidden" id="nik" name="nik" value="{{nik}}">
+                        <input type="hidden" id="job" name="job" value="{{job}}">
+                        <input type="hidden" id="hostName" name="hostName" value="{{hostName}}">
+                        <input type="hidden" id="hostAdd" name="hostAdd" value="{{hostAdd}}">
+                        <input type="hidden" id="password" name="password" value="{{password}}">
+
+                        <div id="isi-form" class="mb-3 pb-2 d-flex flex-row align-items-center gap-3">
+                            <input class="form-check-input" type="checkbox" value="agree" id="agree" onclick="agreement()">
+                            <small><label id="text-agree" class="form-check-label" for="agree">Ya, Saya menyetujui syarat dan ketentuan yang berlaku</label></small>
+                        </div>
+
+                        <div class="w-100 d-flex flex-row gap-3">
+                            <!-- <input type="button" id="sub-btn1" value="BACK" class="btn btn-primary w-100 back"> -->
+                            <input type="submit" id="sub-btn2" value="DAFTAR" class="btn btn-primary w-100 next">
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for( 'static', filename='js/signUpDoctor6.js') }}"></script>
+</body>
+</html>

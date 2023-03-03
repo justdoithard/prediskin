@@ -1,0 +1,105 @@
+h1, p, .btn, a, div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a, a, nav ul li p {
+    color: #0C6170;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0C6170;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li p::after {
+    content: '';
+    width: 100%;
+    height: 3.5px;
+    background: #0C6170;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* responsive */
+
+nav .fa-solid {
+    display: none;
+}
+
+
+.buttonsa {
+    color: #DBF5F0;
+    background-color: #0C6170;
+    border-color: #DBF5F0;
+    border-radius: 0.9874917709019092vw;
+    padding: 1.053324555628703vw 3.1599736668861094vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 3.2916392363396976vw;
+}
+
+.buttonsa:hover {
+    box-shadow: 0 0.7899934167215273vw 1.053324555628703vw 0 rgba(0,0,0,0.24),0 1.119157340355497vw 3.2916392363396976vw 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
+
+.buttonsb {
+    color: #0C6170;
+    background-color: #DBF5F0;
+    border: none;
+    border-radius: 0.9874917709019092vw;
+    padding: 2.106649111257406vw 3.949967083607637vw;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 3.2916392363396976vw;
+}
+
+.buttonsb:hover {
+    box-shadow: 0 0.7899934167215273vw 1.053324555628703vw 0 rgba(0,0,0,0.24),0 1.119157340355497vw 3.2916392363396976vw 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
+
+.containe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.9749835418038184vw;
+}
+
+.wrappers {
+    min-height: 45vw;
+}
+
+.diseaseList {
+    background: none; 
+    color: inherit; 
+    border: none; 
+    padding: 0; 
+    font: inherit; 
+    cursor: pointer; 
+    outline: inherit;
+}
